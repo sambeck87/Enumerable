@@ -1,6 +1,6 @@
 module MyEnumerable
   def all?(&block)
-    ech { |item| return false unless block.call(item) }
+    each { |item| return false unless block.call(item) }
     true
   end
 
